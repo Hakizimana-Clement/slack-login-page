@@ -3,6 +3,7 @@
   flex-direction: column;
   /* not working */
   justify-content: center;
+  margin-bottom: 1rem;
 }
 .login-wallpaper {
   position: relative;
@@ -61,10 +62,17 @@
   font-size: var(--size-base);
   /* 3px */
   margin-top: 0.69rem;
+  text-align: center;
 }
 /* google link (button) */
 .btn-google {
-  width: 100%;
+  /* width: 100%; */
+  /* width: 83%; */
+  /* width: 91%; */
+  width: 88%;
+
+  margin: 2.5rem auto;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,3 +210,95 @@
 .login-create-account__link {
   text-decoration: none;
 }
+
+/* ################################################################################# */
+/* ################################# xs devices ###########################################*/
+/* ################################################################################# */
+@media (min-width: 475px) {
+  .btn-google {
+    width: 91%;
+  }
+
+  .login-wallpaper__text-container-description {
+    margin-top: 0.1rem;
+    font-size: var(--size-sm);
+  }
+
+  .login-with-email__container-text {
+    font-size: var(--size-xs);
+  }
+
+  .login-create-account {
+    margin: 10rem 0 0.5rem;
+  }
+}
+/* sm*/
+/* @media (min-width: 640px) {
+  
+} */
+/* md */
+@media (min-width: 768px) {
+  .login-wallpaper__text-container {
+    bottom: 62px;
+  }
+  .login-wallpaper__text-container-description {
+    font-size: var(--size-base);
+  }
+  .login-wallpaper__text-container-title {
+    font-size: var(--size-2xl);
+  }
+
+  .login-details {
+    margin-top: 4rem;
+  }
+
+  .login-details__container {
+    gap: 18px;
+  }
+
+  .login-details__container-text--title {
+    /* font-size: var(--size-2xl); */
+    font-size: var(--size-4xl);
+  }
+
+  .login-details__container-text--description {
+    font-size: var(--size-lg);
+    margin-top: 0.3rem;
+  }
+  .btn-google__text {
+    font-size: var(--size-lg);
+  }
+  .login-form {
+    row-gap: 30px;
+  }
+
+  .login-with-email__container-text {
+    font-size: var(--size-base);
+  }
+  .login-form__label {
+    font-size: var(--size-sm);
+    margin-bottom: 12px;
+  }
+  .login-form__checkbox-container--label,
+  .login-form__checkbox-container--link {
+    font-size: var(--size-base);
+  }
+  .login-form__checkbox-container--box[type="checkbox"] {
+    transform: scale(1);
+  }
+  .login-create-account__description {
+    font-size: var(--size-xl);
+  }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {
+} */
+
+/* xl */
+/* @media (min-width: 1280px) {
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+} */

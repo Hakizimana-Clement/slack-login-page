@@ -27,7 +27,8 @@
   </head>
   <body>
     <main>
-      <div class="login container">
+      <!-- <div class="login container"> -->
+      <div class="login">
         <!-- login wallpaper -->
         <div class="login-wallpaper">
           <img
@@ -48,7 +49,7 @@
         <!-- login details -->
         <!-- no padding -->
         <!-- <div class="login-details "> -->
-        <div class="login-details container-padding">
+        <div class="login-details container">
           <div class="login-details__container">
             <img
               class="login-details__container-image"
@@ -62,27 +63,39 @@
               <p class="login-details__container-text--description">
                 See what is going on with your business
               </p>
-              <a href="#" class="btn-google">
-                <!-- <div> -->
+              <!-- login btn -->
+              <!-- <a href="#" class="btn-google">
                 <img
                   class="btn-google__image"
                   src="./images/google-icon.svg"
                   alt="google icon"
                 />
                 <span class="btn-google__text">Continue with Google</span>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
+        <div class="container">
+          <a href="#" class="btn-google">
+            <!-- <div> -->
+            <img
+              class="btn-google__image"
+              src="./images/google-icon.svg"
+              alt="google icon"
+            />
+            <span class="btn-google__text">Continue with Google</span>
+          </a>
+        </div>
+
         <!-- login with email -->
-        <div class="login-with-email__container">
+        <div class="login-with-email__container container">
           <p class="login-with-email__container-text">
             ------------- or Sign in with Email -------------
           </p>
         </div>
         <!-- login form -->
         <!-- <form class="login-form container-padding"> -->
-        <form class="login-form">
+        <form class="login-form container">
           <div>
             <label class="login-form__label" for="email">Email</label>
             <input
@@ -115,14 +128,14 @@
                 >Remember Me</label
               >
             </div>
-            <a href="#" class="link login-form__checkbox-container--link"
+            <a href="#" class="link-hover login-form__checkbox-container--link"
               >Forgot Password?</a
             >
           </div>
           <button class="btn login-form__btn">Login</button>
         </form>
         <!-- create new account -->
-        <div class="login-create-account">
+        <div class="login-create-account container">
           <p class="login-create-account__description">
             Not Registered Yet?
             <a href="#" class="login-create-account__link link-hover">
