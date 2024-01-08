@@ -1,8 +1,11 @@
 .login {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   /* not working */
-  justify-content: center;
+  /* justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+
   margin-bottom: 1rem;
 }
 .login-wallpaper {
@@ -292,8 +295,27 @@
 }
 
 /* lg */
-/* @media (min-width: 1024px) {
-} */
+@media (min-width: 1024px) {
+  .login {
+    grid-template-columns: 1fr 1fr;
+  }
+  .login-wallpaper__img {
+    position: relative;
+  }
+
+  .login-wallpaper__text-container {
+    position: absolute;
+    bottom: 55vh; /* 5% of the viewport height from the bottom */
+    /* right: 5vw; 5% of the viewport width from the right */
+    z-index: 100; /* place the text above the image *
+    top: 299px;
+    /* bottom: 190px; */
+  }
+
+  .login-create-account {
+    /* margin-top: 15rem; */
+  }
+}
 
 /* xl */
 /* @media (min-width: 1280px) {
