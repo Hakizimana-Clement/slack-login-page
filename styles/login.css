@@ -39,10 +39,11 @@
 .login-details {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   margin-top: 2rem;
+  /* border: 2px solid black; */
 }
-
 .login-details__container {
   display: flex;
   flex-direction: column;
@@ -109,10 +110,10 @@
   font-weight: 700;
 }
 
-/* login withe email */
+/* login withe email
 .login-with-email__container {
   margin-top: 2.25rem;
-}
+} */
 .login-with-email__container-text {
   text-align: center;
   font-weight: 600;
@@ -139,7 +140,7 @@
   /* padding: 0 4rem; */
   /* padding: 0 1.5rem;  good*/
   padding: 0 21px;
-  margin-top: 36px;
+  /* margin-top: 36px; */
 }
 
 .login-form__label {
@@ -180,6 +181,7 @@
 
 .login-form__checkbox-container--label {
   color: var(--clr-google-text);
+  cursor: pointer;
 }
 .login-form__checkbox-container--label,
 .login-form__checkbox-container--link {
@@ -251,8 +253,10 @@
     font-size: var(--size-2xl);
   }
 
+  /* control details */
   .login-details {
-    margin-top: 4rem;
+    gap: 35px;
+    /* margin-top: 4rem; */
   }
 
   .login-details__container {
@@ -292,31 +296,113 @@
   .login-create-account__description {
     font-size: var(--size-xl);
   }
+
+  /****************** container-padding ******************/
+  .btn-and-form {
+    width: 64% !important;
+    margin: 0 auto;
+  }
 }
 
 /* lg */
+
 @media (min-width: 1024px) {
+  /****************** container-padding ******************/
+  /* .btn-and-form {
+  } */
+
   .login {
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
   }
-  .login-wallpaper__img {
-    position: relative;
+  .login-details__container {
+    /* display: block; */
+    align-items: flex-start;
+  }
+  .login-details__container-text--description {
+    text-align: left;
+  }
+  .login-details__container-image {
+    width: 10%;
+    margin-bottom: 6px;
+    /* margin-bottom: 0.9375rem */
   }
 
-  .login-wallpaper__text-container {
-    position: absolute;
-    bottom: 55vh; /* 5% of the viewport height from the bottom */
-    /* right: 5vw; 5% of the viewport width from the right */
-    z-index: 100; /* place the text above the image *
-    top: 299px;
-    /* bottom: 190px; */
+  .login-details__container-text--title {
+    /* font-size: var(--size-2xl); */
+    font-size: var(--size-xl);
+  }
+  .login-details__container-text--description {
+    /* font-size: var(--size-sm); */
+    font-size: var(--size-xs);
+  }
+  .btn-google {
+    margin: 16px 0 0;
+    /* width: 100%; */
+    width: 25vw;
+    padding: 6px 0;
+  }
+  .btn-google__text {
+    font-size: var(--size-xs);
+    /* width: 53%; */
+  }
+
+  /* .btn-google__text {
+    font-size: var(--size-sm);
+    width: 70%;
+  } */
+  .login-details {
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    gap: 30px;
+  }
+  .login-with-email__container-text {
+    font-size: var(--size-xxs);
+  }
+  /* login form */
+  .login-form {
+    /* margin-top: 36px; */
+    row-gap: 16px;
+    /* padding: 0; */
+  }
+  .login-form__label {
+    font-size: var(--size-xs);
+    /* font-size: 14px; */
+    margin-bottom: 6px;
+  }
+  .login-form__input {
+    padding: 10px 10px;
+  }
+  .login-form__checkbox-container {
+    margin-top: 4px;
+  }
+
+  .login-form__checkbox-container--label,
+  .login-form__checkbox-container--link {
+    font-size: var(--size-xs);
+  }
+  .test {
+    /* width: 40%; */
+    width: 55%;
+  }
+
+  .test-2 {
+    width: 50%;
   }
 
   .login-create-account {
-    /* margin-top: 15rem; */
+    margin-top: 4rem;
   }
-}
 
+  .login-create-account__description {
+    font-size: var(--size-sm);
+  }
+  /* .btn-and-form {
+    width: 53% !important;
+    margin: 0 auto;
+  } */
+}
 /* xl */
 /* @media (min-width: 1280px) {
 } */
