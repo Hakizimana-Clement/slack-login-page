@@ -5,11 +5,13 @@
   /* justify-content: center; */
   display: grid;
   grid-template-columns: 1fr;
+  /* min-height: 100vh; */
 
   margin-bottom: 1rem;
 }
 .login-wallpaper {
   position: relative;
+  /* height: 100vh; */
 }
 
 .login-wallpaper__text-container {
@@ -62,10 +64,14 @@
 }
 
 .login-details__container-text--description {
-  /* font-size: var(--size-sm); */
-  font-size: var(--size-base);
+  font-size: var(--size-sm);
+  /* font-size: var(--size-base); */
   /* 3px */
-  margin-top: 0.69rem;
+  /* margin-top: 0.69rem; */
+}
+
+.login-details__container-text--title,
+.login-details__container-text--description {
   text-align: center;
 }
 /* google link (button) */
@@ -110,17 +116,21 @@
   font-weight: 700;
 }
 
-/* login withe email
+/* login withe email */
 .login-with-email__container {
-  margin-top: 2.25rem;
-} */
+  margin: 0 0 3rem;
+}
 .login-with-email__container-text {
   text-align: center;
   font-weight: 600;
   color: var(--clr-login-with-email);
-  font-size: var(--size-sm);
+  /* font-size: var(--size-sm); */
+  font-size: var(--size-xs);
 }
 
+.login-details__container-text {
+  width: 100%;
+}
 /* login form */
 /* flex */
 /* .login-form {
@@ -172,8 +182,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0.5rem;
 }
-
 .login-form__checkbox-container--box[type="checkbox"] {
   accent-color: var(--clr-rose);
   transform: scale(0.9);
@@ -194,7 +204,8 @@
 }
 
 .login-form__btn {
-  width: 100%;
+  /* width: 100%; */
+  /* margin-top: 2rem; */
 }
 
 /* create new account */
@@ -220,6 +231,10 @@
 /* ################################# xs devices ###########################################*/
 /* ################################################################################# */
 @media (min-width: 475px) {
+  .login-details__container-image {
+    width: 13%;
+  }
+
   .btn-google {
     width: 91%;
   }
@@ -229,12 +244,24 @@
     font-size: var(--size-sm);
   }
 
+  /* .login-with-email__container {
+    margin: 0 0 2rem;
+  } */
+
   .login-with-email__container-text {
-    font-size: var(--size-xs);
+    /* font-size: var(--size-xs); */
+    font-size: var(--size-sm);
   }
 
   .login-create-account {
     margin: 10rem 0 0.5rem;
+  }
+  .login-details {
+    margin-top: 4rem;
+  }
+
+  .login-details__container-text--title {
+    text-align: center;
   }
 }
 /* sm*/
@@ -261,6 +288,9 @@
 
   .login-details__container {
     gap: 18px;
+  }
+  .login-details__container-image {
+    width: 9%;
   }
 
   .login-details__container-text--title {
@@ -319,6 +349,10 @@
     /* display: block; */
     align-items: flex-start;
   }
+
+  .login-details__container-text--title {
+    text-align: left;
+  }
   .login-details__container-text--description {
     text-align: left;
   }
@@ -329,15 +363,17 @@
   }
 
   .login-details__container-text--title {
-    /* font-size: var(--size-2xl); */
-    font-size: var(--size-xl);
+    font-size: var(--size-2xl);
+    /* font-size: var(--size-xl); */
   }
   .login-details__container-text--description {
     /* font-size: var(--size-sm); */
     font-size: var(--size-xs);
+    margin-top: 0;
   }
   .btn-google {
-    margin: 16px 0 0;
+    /* margin: 16px 0 0; */
+    margin: 27px 0 0;
     /* width: 100%; */
     width: 25vw;
     padding: 6px 0;
@@ -358,8 +394,13 @@
     gap: 30px;
   }
   .login-with-email__container-text {
-    font-size: var(--size-xxs);
+    /* font-size: var(--size-xxs); */
+    font-size: var(--size-xs);
   }
+  .login-with-email__container {
+    margin: 0 0 0;
+  }
+
   /* login form */
   .login-form {
     /* margin-top: 36px; */
@@ -382,17 +423,13 @@
   .login-form__checkbox-container--link {
     font-size: var(--size-xs);
   }
-  .test {
-    /* width: 40%; */
+  .login-form-container {
     width: 55%;
   }
 
-  .test-2 {
-    width: 50%;
-  }
-
   .login-create-account {
-    margin-top: 4rem;
+    /* margin-top: 3.5rem; */
+    margin-top: 2rem;
   }
 
   .login-create-account__description {
