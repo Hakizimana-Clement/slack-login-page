@@ -1,6 +1,6 @@
 :root {
+  /* colors */
   --clr-light: #fff;
-  /* --clr-heading-and-sub-heading:#525252; */
   --clr-heading: #525252;
   --clr-rose: #7f265b;
   --clr-google-text: #828282;
@@ -34,6 +34,11 @@ body {
   font-family: "Nunito Sans", sans-serif;
   background-color: var(--clr-light);
   color: var(--clr-heading);
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
 }
 
 img,

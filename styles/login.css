@@ -1,39 +1,10 @@
 .login {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* not working */
-  /* justify-content: center; */
   display: grid;
   grid-template-columns: 1fr;
-  /* min-height: 100vh; */
-
   margin-bottom: 1rem;
 }
 .login-wallpaper {
   position: relative;
-  /* height: 100vh; */
-}
-
-.login-wallpaper__text-container {
-  width: 100%;
-  position: absolute;
-  bottom: 12px;
-  text-align: center;
-}
-
-.login-wallpaper__text-container-title {
-  font-size: var(--size-xl);
-  font-weight: 800;
-}
-
-.login-wallpaper__text-container-description {
-  font-size: var(--size-sm);
-  font-weight: 600;
-}
-
-.login-wallpaper__text-container-title,
-.login-wallpaper__text-container-description {
-  color: var(--clr-rose);
 }
 
 /* ******************** login details *******************/
@@ -44,7 +15,6 @@
   flex-direction: column;
 
   margin-top: 2rem;
-  /* border: 2px solid black; */
 }
 .login-details__container {
   display: flex;
@@ -53,11 +23,9 @@
 }
 .login-details__container-image {
   width: 14%;
-  /* 15px */
   margin-bottom: 0.9375rem;
 }
 .login-details__container-text--title {
-  /* font-size: var(--size-2xl); */
   font-size: var(--size-3xl);
   font-weight: 700;
   letter-spacing: 1px;
@@ -65,9 +33,6 @@
 
 .login-details__container-text--description {
   font-size: var(--size-sm);
-  /* font-size: var(--size-base); */
-  /* 3px */
-  /* margin-top: 0.69rem; */
 }
 
 .login-details__container-text--title,
@@ -76,29 +41,18 @@
 }
 /* google link (button) */
 .btn-google {
-  /* width: 100%; */
-  /* width: 83%; */
-  /* width: 91%; */
-  width: 88%;
-
-  margin: 2.5rem auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 
-  /* width: 420px; */
-  /* padding: 10px; */
-  /* background-color: black; */
+  width: 88%;
+  margin: 2.5rem auto;
   border-radius: 11px;
-  /* padding: 8px; */
   padding: 12px;
   border: 2px solid #e8e8e8cb;
 
   text-decoration: none;
-  /* 24px */
-  /* margin-top: 1.5rem; */
   margin-top: 2.5rem;
 }
 
@@ -106,17 +60,13 @@
   background-color: #e1e1e1b7;
 }
 
-/* .btn-google__image { */
-/* width: 20%; */
-/* } */
-
 .btn-google__text {
   font-size: var(--size-sm);
   color: var(--clr-google-text);
   font-weight: 700;
 }
 
-/* login withe email */
+/* login with email */
 .login-with-email__container {
   margin: 0 0 3rem;
 }
@@ -124,40 +74,25 @@
   text-align: center;
   font-weight: 600;
   color: var(--clr-login-with-email);
-  /* font-size: var(--size-sm); */
   font-size: var(--size-xs);
 }
 
 .login-details__container-text {
   width: 100%;
 }
-/* login form */
-/* flex */
-/* .login-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
-/* grid */
+/* forms */
+/* method: grid */
 .login-form {
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-items: center; */
   row-gap: 24px;
-  /* padding: 0 3rem; */
-  /* padding: 0 5rem; */
-  /* padding: 0 4rem; */
-  /* padding: 0 1.5rem;  good*/
   padding: 0 21px;
-  /* margin-top: 36px; */
 }
 
 .login-form__label {
   display: block;
   margin-bottom: 4px;
-  /* font-size: var(--size-sm); */
-  /* font-size: var(--size-base); */
   font-size: var(--size-xs);
   font-weight: 600;
   color: var(--clr-google-text);
@@ -166,8 +101,6 @@
 
 .login-form__input {
   width: 100%;
-  /* padding: 11px 6px; */
-  /* padding: 16px 6px; */
   padding: 16px 12px;
   border-radius: 10px;
   font-family: inherit;
@@ -203,18 +136,7 @@
   text-decoration: none;
 }
 
-.login-form__btn {
-  /* width: 100%; */
-  /* margin-top: 2rem; */
-}
-
 /* create new account */
-/* .login-create-account {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-} */
-
 .login-create-account {
   margin-top: 6rem;
   text-align: center;
@@ -244,12 +166,7 @@
     font-size: var(--size-sm);
   }
 
-  /* .login-with-email__container {
-    margin: 0 0 2rem;
-  } */
-
   .login-with-email__container-text {
-    /* font-size: var(--size-xs); */
     font-size: var(--size-sm);
   }
 
@@ -264,11 +181,9 @@
     text-align: center;
   }
 }
-/* sm*/
-/* @media (min-width: 640px) {
-  
-} */
-/* md */
+/* ################################################################################# */
+/* ################################# md devices ###########################################*/
+/* ################################################################################# */
 @media (min-width: 768px) {
   .login-wallpaper__text-container {
     bottom: 62px;
@@ -283,7 +198,6 @@
   /* control details */
   .login-details {
     gap: 35px;
-    /* margin-top: 4rem; */
   }
 
   .login-details__container {
@@ -294,7 +208,6 @@
   }
 
   .login-details__container-text--title {
-    /* font-size: var(--size-2xl); */
     font-size: var(--size-4xl);
   }
 
@@ -326,75 +239,60 @@
   .login-create-account__description {
     font-size: var(--size-xl);
   }
-
   /****************** container-padding ******************/
+
   .btn-and-form {
     width: 64% !important;
     margin: 0 auto;
   }
 }
 
-/* lg */
+/* ################################################################################# */
+/* ################################# lg devices ###########################################*/
+/* ################################################################################# */
 
 @media (min-width: 1024px) {
   /****************** container-padding ******************/
-  /* .btn-and-form {
-  } */
-
   .login {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 0;
   }
   .login-details__container {
-    /* display: block; */
     align-items: flex-start;
   }
 
-  .login-details__container-text--title {
-    text-align: left;
-  }
+  .login-details__container-text--title,
   .login-details__container-text--description {
     text-align: left;
   }
   .login-details__container-image {
-    width: 10%;
+    width: 12%;
     margin-bottom: 6px;
-    /* margin-bottom: 0.9375rem */
   }
 
   .login-details__container-text--title {
     font-size: var(--size-2xl);
-    /* font-size: var(--size-xl); */
   }
   .login-details__container-text--description {
-    /* font-size: var(--size-sm); */
     font-size: var(--size-xs);
     margin-top: 0;
   }
   .btn-google {
-    /* margin: 16px 0 0; */
     margin: 27px 0 0;
-    /* width: 100%; */
     width: 25vw;
     padding: 6px 0;
   }
   .btn-google__text {
     font-size: var(--size-xs);
-    /* width: 53%; */
   }
 
-  /* .btn-google__text {
-    font-size: var(--size-sm);
-    width: 70%;
-  } */
   .login-details {
     flex-direction: column;
     align-items: center;
-    /* gap: 10px; */
     gap: 30px;
   }
+  /* login with email  */
   .login-with-email__container-text {
-    /* font-size: var(--size-xxs); */
     font-size: var(--size-xs);
   }
   .login-with-email__container {
@@ -403,13 +301,10 @@
 
   /* login form */
   .login-form {
-    /* margin-top: 36px; */
     row-gap: 16px;
-    /* padding: 0; */
   }
   .login-form__label {
     font-size: var(--size-xs);
-    /* font-size: 14px; */
     margin-bottom: 6px;
   }
   .login-form__input {
@@ -428,22 +323,10 @@
   }
 
   .login-create-account {
-    /* margin-top: 3.5rem; */
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .login-create-account__description {
     font-size: var(--size-sm);
   }
-  /* .btn-and-form {
-    width: 53% !important;
-    margin: 0 auto;
-  } */
 }
-/* xl */
-/* @media (min-width: 1280px) {
-} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {
-} */
