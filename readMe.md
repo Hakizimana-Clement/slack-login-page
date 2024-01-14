@@ -16,8 +16,8 @@ The resource: [Slack login page Figma](<https://www.figma.com/file/ah4tm83mbBB63
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Challenges](#challenges)
+- [Author](#author)
 
 ## Installation
 
