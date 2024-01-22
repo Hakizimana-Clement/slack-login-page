@@ -2,11 +2,21 @@
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 1rem;
+  /* This make login grid take 100 view port of height to make it fit on screen */
+  height: 100vh;
 }
 .login-wallpaper {
   position: relative;
 }
+.login-wallpaper {
+  /* background-color: #074f57; */
+  background-image: url("../images/login-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+  padding: 250px 0;
+}
 /* ******************** login details *******************/
 /* login container */
 .login-details {
@@ -195,6 +205,9 @@
     font-size: var(--size-2xl);
   }
 
+  .login-wallpaper {
+    padding: 400px;
+  }
   /* control details */
   .login-details {
     gap: 35px;
@@ -257,6 +270,11 @@
     grid-template-columns: 1fr 1fr;
     margin-bottom: 0;
   }
+
+  .login-wallpaper {
+    padding: 0;
+  }
+
   .login-details__container {
     align-items: flex-start;
   }
